@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<od280/od315_of_diluted_wines &le; 2.19<br/>entropy = 1.554<br/>samples = 124<br/>value = [41, 52, 31]<br/>class = xueli>, fillcolor="#39e58122"] ;
+1 [label=<color_intensity &le; 3.825<br/>entropy = 0.689<br/>samples = 38<br/>value = [0, 7, 31]<br/>class = beiermode>, fillcolor="#8139e5c5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.0<br/>samples = 6<br/>value = [0, 6, 0]<br/>class = xueli>, fillcolor="#39e581ff"] ;
+1 -> 2 ;
+3 [label=<flavanoids &le; 1.58<br/>entropy = 0.201<br/>samples = 32<br/>value = [0, 1, 31]<br/>class = beiermode>, fillcolor="#8139e5f7"] ;
+1 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 31<br/>value = [0, 0, 31]<br/>class = beiermode>, fillcolor="#8139e5ff"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = xueli>, fillcolor="#39e581ff"] ;
+3 -> 5 ;
+6 [label=<proline &le; 722.5<br/>entropy = 0.998<br/>samples = 86<br/>value = [41, 45, 0]<br/>class = xueli>, fillcolor="#39e58117"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<alcalinity_of_ash &le; 17.75<br/>entropy = 0.159<br/>samples = 43<br/>value = [1, 42, 0]<br/>class = xueli>, fillcolor="#39e581f9"] ;
+6 -> 7 ;
+8 [label=<alcohol &le; 13.175<br/>entropy = 0.918<br/>samples = 3<br/>value = [1, 2, 0]<br/>class = xueli>, fillcolor="#39e5817f"] ;
+7 -> 8 ;
+9 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 2, 0]<br/>class = xueli>, fillcolor="#39e581ff"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = qinjiu>, fillcolor="#e58139ff"] ;
+8 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 40<br/>value = [0, 40, 0]<br/>class = xueli>, fillcolor="#39e581ff"] ;
+7 -> 11 ;
+12 [label=<color_intensity &le; 3.55<br/>entropy = 0.365<br/>samples = 43<br/>value = [40, 3, 0]<br/>class = qinjiu>, fillcolor="#e58139ec"] ;
+6 -> 12 ;
+13 [label=<entropy = 0.0<br/>samples = 3<br/>value = [0, 3, 0]<br/>class = xueli>, fillcolor="#39e581ff"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.0<br/>samples = 40<br/>value = [40, 0, 0]<br/>class = qinjiu>, fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}
